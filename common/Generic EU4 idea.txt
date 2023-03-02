@@ -291,3 +291,43 @@ POR_ideas = {
 		artillery_power = 0.15
 	}
 }
+ETH_ideas = {
+	start = {
+		global_autonomy = -0.05
+		land_attrition = -0.10
+	}
+	
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = ETH
+	}
+	free = yes		#will be added at load.
+	
+	solomonid_claim = {
+		prestige = 1
+	}
+	nagusa_negast = {
+		heir_chance = 0.5
+		legitimacy = 1
+	}
+	hostile_borders = {
+		defensiveness = 0.20
+		war_exhaustion = -0.03
+	}
+	diplomatic_demeanor = {
+		diplomatic_reputation = 1
+	}
+	the_ark_of_the_covenant = {
+		missionaries = 1
+	}
+	eth_expansionist_policy = {
+		core_creation = -0.10
+	}
+	eth_reformed_armies = {
+		army_tradition = 0.5
+		infantry_power = 0.1
+	}
+}
