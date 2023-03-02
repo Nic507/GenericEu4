@@ -119,3 +119,73 @@ offensive_ideas = {
 		factor = 0.94
 	}
 }
+maritime_ideas = {
+	category = DIP
+
+	trigger = {
+		primitives = no
+	}
+
+	bonus = {
+		sea_repair = yes
+		movement_speed_in_fleet_modifier = 1 
+	}
+
+	merchant_traditions = {
+		naval_tradition_from_trade = 2.0
+		trade_range_modifier = 0.25
+	}
+	merchant_marine = {
+		global_sailors_modifier = 0.5
+		allowed_marine_fraction = 0.25
+	}
+	sheltered_ports = {
+		global_ship_repair = 0.2
+		sailor_maintenance_modifer = -0.1
+	}
+	grand_navy = {
+		naval_forcelimit_modifier = 0.5
+		ship_power_propagation = 0.25
+	}
+	ships_penny = {
+		global_ship_cost = -0.1
+	}
+	sea_hawks = {
+		free_leader_pool = 1
+		admiral_cost = -0.25
+	}
+	naval_fighting_instruction = {
+		blockade_efficiency = 0.5
+		privateer_efficiency = 0.25
+	}
+
+	ai_will_do = {
+		factor = 0.41
+		modifier = {
+			factor = 0
+			is_tribal = yes
+		}
+		modifier = {
+			factor = 0
+			primitives = yes
+		}
+		modifier = {
+			factor = 0
+			NOT = { num_of_ports = 1 }
+			NOT = { is_colonial_nation = yes }
+		}
+		modifier = {
+			factor = 0.41
+			NOT = { num_of_ports = 10 }
+		}
+		modifier = {
+			factor = 0.41
+			num_of_cities = 50
+		}
+
+		modifier = {
+			factor = 10
+			has_government_attribute = is_pirate_republic_reform
+		}
+	}
+}
