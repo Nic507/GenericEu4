@@ -63,6 +63,7 @@ SPA_ideas = {
 	}
 	gold_fleet = {
 		naval_forcelimit_modifier = 0.25
+		naval_tradition 0.5
 	}
 	spanish_armada = {
 		heavy_ship_power = 0.15
