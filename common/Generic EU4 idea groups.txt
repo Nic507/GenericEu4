@@ -1,0 +1,88 @@
+defensive_ideas = {
+	category = MIL
+
+	bonus = {
+		hostile_attrition = 1
+		max_hostile_attrition = 1 
+		shock_damage_received = -0.1
+
+	}
+
+	battlefield_commisions = {
+		army_tradition_from_battle = 1.0
+		army_tradition = 1
+	}
+	military_drill = {
+		land_morale = 0.15
+	}
+	improved_manuever = {
+		leader_land_manuever = 1
+	}
+	regimental_system = {
+		land_maintenance_modifier = -0.05
+	}
+	defensive_mentality = {
+		defensiveness = 0.2
+		fort_maintenance_modifier = -0.1
+	}
+	supply_trains = {
+		reinforce_speed = 0.33
+	}
+	improved_foraging = {
+		land_attrition = -0.25
+	}
+
+	ai_will_do = {
+		factor = 0.77
+	}
+}
+aristocracy_ideas = {
+	category = MIL
+
+	bonus = {
+		leader_siege = 1
+		nobles_loyalty_modifier = 0.1
+		rajput_loyalty_modifier = 0.1
+	}
+
+	trigger = {
+		has_government_attribute = enables_aristocratic_idea_group
+	}
+	
+	noble_knights = {
+		cavalry_power = 0.15
+		cavalry_cost = -0.20
+	}
+	military_traditions = {
+		mil_tech_cost_modifier  = -0.1
+	}
+	local_nobility = {
+		global_autonomy = -0.025
+		yearly_absolutism = 0.5
+	}
+	serfdom = {
+		global_manpower_modifier = 0.25
+		development_cost = -0.05
+	}
+	noble_officers = {
+		army_tradition_decay = -0.01
+		navy_tradition_decay = -0.01
+	}
+	international_nobility = {
+		diplomats = 1
+		general_cost = -0.1
+	}
+	noble_resilience = {
+		mercenary_manpower = 0.25
+	}
+	
+
+	ai_will_do = {
+		factor = 0.45
+		
+		modifier = {
+			factor = 0.5
+			is_subject = yes
+		}	
+	}
+}
