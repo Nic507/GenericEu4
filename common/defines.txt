@@ -1,0 +1,2 @@
+MIN_RELATIONS_TO_ALLY = -201,						-- Alliances not possible if either country has an opinion of the other lower than this
+MIN_RELATIONS_TO_SUPPORT_INDEPENDENCE = -201,	-- Support Independence not possible if either country has an opinion of the other lower than this
