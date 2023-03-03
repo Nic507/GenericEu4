@@ -1,0 +1,191 @@
+defensive_ideas = {
+	category = MIL
+
+	bonus = {
+		hostile_attrition = 1
+		max_hostile_attrition = 1 
+		shock_damage_received = -0.1
+
+	}
+
+	battlefield_commisions = {
+		army_tradition_from_battle = 1.0
+		army_tradition = 1
+	}
+	military_drill = {
+		land_morale = 0.15
+	}
+	improved_manuever = {
+		leader_land_manuever = 1
+	}
+	regimental_system = {
+		land_maintenance_modifier = -0.05
+	}
+	defensive_mentality = {
+		defensiveness = 0.2
+		fort_maintenance_modifier = -0.1
+	}
+	supply_trains = {
+		reinforce_speed = 0.33
+	}
+	improved_foraging = {
+		land_attrition = -0.25
+	}
+
+	ai_will_do = {
+		factor = 0.77
+	}
+}
+aristocracy_ideas = {
+	category = MIL
+
+	bonus = {
+		leader_siege = 1
+		nobles_loyalty_modifier = 0.1
+		rajput_loyalty_modifier = 0.1
+	}
+
+	trigger = {
+		has_government_attribute = enables_aristocratic_idea_group
+	}
+	
+	noble_knights = {
+		cavalry_power = 0.15
+		cavalry_cost = -0.20
+	}
+	military_traditions = {
+		mil_tech_cost_modifier  = -0.1
+	}
+	local_nobility = {
+		global_autonomy = -0.025
+		yearly_absolutism = 0.5
+	}
+	serfdom = {
+		global_manpower_modifier = 0.25
+		development_cost = -0.05
+	}
+	noble_officers = {
+		army_tradition_decay = -0.01
+		navy_tradition_decay = -0.01
+	}
+	international_nobility = {
+		diplomats = 1
+		general_cost = -0.1
+	}
+	noble_resilience = {
+		mercenary_manpower = 0.25
+	}
+	
+
+	ai_will_do = {
+		factor = 0.45
+		
+		modifier = {
+			factor = 0.5
+			is_subject = yes
+		}	
+	}
+}
+offensive_ideas = {
+	category = MIL
+
+	bonus = {
+		recover_army_morale_speed = 0.1
+	}
+
+	bayonet_leaders = {
+		leader_land_shock = 1
+	}
+	national_conscripts = {
+		global_regiment_recruit_speed = -0.1
+	}
+	superior_firepower = {
+		leader_land_fire = 1
+	}
+	glorious_arms = {
+		prestige_from_land = 1.0
+	}
+	engineer_corps = {
+		siege_ability = 0.20
+	}
+	grand_army = {
+		land_forcelimit_modifier = 0.15
+	}
+	napoleonic_warfare = {
+		discipline = 0.05
+	}
+
+	ai_will_do = {
+		factor = 0.94
+	}
+}
+maritime_ideas = {
+	category = DIP
+
+	trigger = {
+		primitives = no
+	}
+
+	bonus = {
+		sea_repair = yes
+		movement_speed_in_fleet_modifier = 1 
+	}
+
+	merchant_traditions = {
+		naval_tradition_from_trade = 2.0
+		trade_range_modifier = 0.25
+	}
+	merchant_marine = {
+		global_sailors_modifier = 0.5
+		allowed_marine_fraction = 0.25
+	}
+	sheltered_ports = {
+		global_ship_repair = 0.2
+		sailor_maintenance_modifer = -0.1
+	}
+	grand_navy = {
+		naval_forcelimit_modifier = 0.5
+		ship_power_propagation = 0.25
+	}
+	ships_penny = {
+		global_ship_cost = -0.1
+	}
+	sea_hawks = {
+		free_leader_pool = 1
+		admiral_cost = -0.25
+	}
+	naval_fighting_instruction = {
+		blockade_efficiency = 0.5
+		privateer_efficiency = 0.25
+	}
+
+	ai_will_do = {
+		factor = 0.41
+		modifier = {
+			factor = 0
+			is_tribal = yes
+		}
+		modifier = {
+			factor = 0
+			primitives = yes
+		}
+		modifier = {
+			factor = 0
+			NOT = { num_of_ports = 1 }
+			NOT = { is_colonial_nation = yes }
+		}
+		modifier = {
+			factor = 0.41
+			NOT = { num_of_ports = 10 }
+		}
+		modifier = {
+			factor = 0.41
+			num_of_cities = 50
+		}
+
+		modifier = {
+			factor = 10
+			has_government_attribute = is_pirate_republic_reform
+		}
+	}
+}
