@@ -1,0 +1,12 @@
+player_colonial_nation = {
+    potential = {
+        is_colonial_nation = yes
+    }
+    trigger = {
+        ai = no
+    }
+
+    development_cost = 0.2
+    land_forcelimit_modifier = -0.5
+    global_manpower_modifier = -0.5
+}
